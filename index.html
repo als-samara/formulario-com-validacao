@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro - com validação</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="texto">
+            <h1>Ficou com dúvida?<br>
+                Nos mande uma mensagem!
+            </h1>
+            <p>caso tenha ficado com qualquer dúvida, basta nos enviar uma mensagem e responderemos em menos de 24 horas
+            </p>
+        </div>
+        <form class="formulario">
+            <div class="input-usuario">
+                <input class="input-content" type="text" placeholder="Nome completo *" name="dados-pessoais">
+                <label for="nome">campo obrigatório</label>
+            </div>
+
+            <div class="input-usuario">
+                <input name="dados-pessoais" type="email" class="input-content" placeholder="Email *">
+                <label for="email">campo obrigatório</label>
+            </div>
+
+            <div class="input-usuario">
+                <input name="dados-pessoais" type="tel" class="input-content" placeholder="Telefone *">
+                <label for="tel">campo obrigatório</label>
+            </div>
+
+            <div class="input-usuario">
+                <textarea name="dados-pessoais" class="input-content"  rows="6"
+                    placeholder="Mensagem *"></textarea>
+                <label for="mensagem">campo obrigatório</label>
+            </div>
+            <p>*campos obrigatórios</p>
+            <input type="submit" value="Enviar" class="botao" id="botao-submit">
+        </form>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+@media(max-width: 786px){
+    .main-container{
+        flex-direction: column;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    .formulario{
+        margin: 0 1.6rem;
+        flex-shrink: 1;
+    }
+}
+
+@media(max-width: 414px){
+    .formulario{
+        max-width: 240px;
+    }
+    .input-usuario{
+        max-width: 90%;
+    }
+    
+    .input-content {
+        min-width: 220px;
+    }
+}
