@@ -3,12 +3,11 @@ const inputs = document.querySelectorAll(".input-content")
 
 inputs.forEach(input => {
     input.addEventListener("change", () => {
-        const inputDiv = input.parentElement;
         if (input.value !== "") {
-            inputDiv.classList.remove("mostrar");
-            inputDiv.classList.add("campo-preenchido");
+            input.parentElement.classList.remove("mostrar");
+            input.parentElement.classList.add("campo-preenchido");
         } else {
-            inputDiv.classList.remove("campo-preenchido");
+            input.parentElement.remove("campo-preenchido");
         }
     });
 });
@@ -16,11 +15,10 @@ inputs.forEach(input => {
 botaoDeEnviar.addEventListener('click', () => {
     event.preventDefault();
     inputs.forEach(input => {
-        const inputDiv = input.parentElement;
         if(input.value === ""){            
-            inputDiv.classList.add("mostrar")
+            input.parentElement.classList.add("mostrar")
         } else {            
-            inputDiv.classList.remove("mostrar")
+            input.parentElement.classList.remove("mostrar")
         }
     })
 })
