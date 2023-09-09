@@ -30,6 +30,10 @@ label {
     border-radius: 5px;
 }
 
+.formulario textarea {
+    resize: none;
+}
+
 .input-content, .botao{
     border-radius: 5px;
     font-weight: 700;
